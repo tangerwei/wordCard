@@ -1,0 +1,151 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    /*font-family: 'Ek Mukta', sans-serif;*/
+    color: #666;
+    background: url(../image/indexbg.jpg) fixed;
+    font-size: 15px;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+display: block;
+}
+strong{
+    font-weight: 700;
+}
+.list-inline{
+    list-style: none;
+    padding-left: 0; 
+    margin-left: -5px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0; 
+    text-align: right;
+}
+.list-inline>li{
+    display: inline-block;
+    padding-left:5px;
+    padding-right:5px;  
+}
+.list-inline>li:after{
+    content: "/";
+    margin:0 0 0 12px;
+    display: inline-block;
+    font-weight: bold;
+}
+.list-inline>li:last-child:after{
+    content: '';
+    margin-right: 0px;
+    margin-left: 0;
+    display: none;
+}
+.list-inline a{
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    color: #000;
+    font-size: 12px;
+}
+.list-inline a:hover{
+    color: #7DC314;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+/*参考上面的将ul显示为一行的list*/
+#top{
+    background: #fff;
+    padding: 10px 0 0;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+    height: 45px;
+}
+@media(max-width:540px){
+    #top{
+        display: none;
+    }
+}
+.col-m{
+    width: 50%;
+    float: left;
+}
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#menu.navbar{
+    height: 48px;
+    margin-top: 20px;
+    padding: 0;
+    background-color: #252628;
+    border-radius: 0;
+}
+#menu>div{
+    height: 100%;
+}
+.menu-col{
+    float: left;
+}
+.menuheader{
+    width: 129px;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    color: #7DC314;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.menuheader:hover{
+    color: #fff;
+}
+.navbar-nav{
+
+}
+.collapse ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.collapse ul>li{
+    float: left;
+    height: 48px;
+    display: block;
+}
+.collapse ul>li a{
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 19px;
+    line-height: 48px;
+    height: 48px;
+    text-decoration: none;
+    display: block;
+}
+.collapse ul>li a:hover{
+    background-color: #fff;
+    color: #000;
+}
